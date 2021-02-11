@@ -361,7 +361,7 @@ def DaisyX_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            ) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
@@ -411,9 +411,9 @@ def DaisyX_about_callback(update, context):
                         InlineKeyboardButton(
                             text="Anti Spam", callback_data="aboutmanu_spamprot"
                         ),
-                    ],
+                    ]],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_")],
-                ]
+                ]]
             ),
         )
     elif query.data == "aboutmanu_credit":
@@ -472,7 +472,7 @@ def DaisyX_about_callback(update, context):
                 [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto")]]
             ),
         )
-    elif query.data == "aboutmanu_tac":
+    elif query.data == "aboutmanu_tac]
         query.message.edit_text(
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
@@ -502,7 +502,7 @@ def DaisyX_about_callback(update, context):
 @run_async
 @typing_action
 def get_help(update, context):
-    chat = update.effective_chat  # type: Optional[Chat]
+    chat = update.effective_chat  #pe: Optional[Chat]
     args = update.effective_message.text.split(None, 1)
 
     # ONLY send help in PM
@@ -659,7 +659,7 @@ def settings_button(update, context):
             chat = context.bot.get_chat(chat_id)
             query.message.edit_text(
                 "Hi there! There are quite a few settings for *{}* - go ahead and pick what "
-                "you're interested in.".format(chat.title),
+                "you'".format(chat.title),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
@@ -688,7 +688,7 @@ def settings_button(update, context):
             pass
         elif excp.message == "Query_id_invalid":
             pass
-        elif excp.message == "Message can't be deleted":
+        elif excp.message} "Message can't be deleted":
             pass
         else:
             query.message.edit_text(excp.message)
@@ -854,13 +854,13 @@ def main():
             client.run_until_disconnected()
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGERong polling.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
         telethn.disconnect()
     else:
-        telethn.run_until_disconnected()
+        telethn.run_until_d
 
     updater.idle()
 
